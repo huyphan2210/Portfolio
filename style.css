@@ -1,11 +1,18 @@
 @import url("https://use.typekit.net/jmk3xov.css");
 
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  margin: 0rem;
+  overflow-x: hidden;
+}
+
 canvas {
   position: fixed;
   top: 0;
   left: 0;
 }
-
 
 :root {
   --dark-bg: rgba(15, 15, 15, 0.95);
@@ -25,7 +32,7 @@ main {
   width: 100%;
   margin: 0px auto;
   padding: 120px 0px;
-  
+
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -36,13 +43,15 @@ h1, h2, h3, blockquote {
   font-style: normal;
 }
 
+section {
+  border-radius: 10px;
+}
+
 canvas {
   position: fixed;
   top: 0;
   left: 0;
 }
-
-
 
   header {
     background: var(--dark-bg);
@@ -50,6 +59,7 @@ canvas {
     font-size: 2.5rem;
     padding: 2rem;
     margin-bottom: var(--spacing);
+    border-radius: 10px;
   }
 
   section {
@@ -79,3 +89,18 @@ canvas {
   .left {
     grid-column: 6 / 12;
   }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
